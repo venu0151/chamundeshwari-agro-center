@@ -1875,11 +1875,16 @@ flex-shrink: 0;
 
 .hero {
     min-height: 560px;
+    position: relative;
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
     padding: 70px 20px;
+    box-sizing: border-box;
 
     background:
         linear-gradient(
