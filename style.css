@@ -116,7 +116,7 @@ justify-content: center;
     background: linear-gradient(
         rgba(0, 0, 0, 0.45),
         rgba(0, 0, 0, 0.45)
-    ), url("Images/farm.jpg.png");
+    ), url("images/farm.jpg.png");
 
     background-size: cover;
     background-position: center;
