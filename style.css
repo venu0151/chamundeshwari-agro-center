@@ -1886,7 +1886,7 @@ flex-shrink: 0;
             rgba(191, 190, 144, 0),
             rgb(1, 30, 13)
         ),
-        url("Images/farm.jpg.png");
+        url("images/farm.jpg.png");
 
     background-size: cover;
     background-position: center;
