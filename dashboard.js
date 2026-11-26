@@ -447,6 +447,9 @@ deleteButton.addEventListener("click", async function() {
 actionCell.appendChild(deleteButton);
 
 row.appendChild(actionCell);
+actionCell.appendChild(deleteButton);
+
+row.appendChild(actionCell);
 
 tableBody.appendChild(row);
 });
