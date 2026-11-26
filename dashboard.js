@@ -812,3 +812,33 @@ document.getElementById("cancelProfileButton")
 // LOAD PROFILE WHEN DASHBOARD STARTS
 
 loadAdminProfile();
+// =====================================
+// COLLAPSE SIDEBAR WHEN PRODUCTS APPEAR
+// =====================================
+
+const dashboardLayout = document.querySelector(".dashboard-layout");
+const productsSection = document.getElementById("products");
+
+if (dashboardLayout && productsSection) {
+
+    const sidebarObserver = new IntersectionObserver(
+        function(entries) {
+
+            entries.forEach(function(entry) {
+
+                if (entry.isIntersecting) {
+                    dashboardLayout.classList.add("sidebar-hidden");
+                } else {
+                    dashboardLayout.classList.remove("sidebar-hidden");
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.1
+        }
+    );
+
+    sidebarObserver.observe(productsSection);
+}

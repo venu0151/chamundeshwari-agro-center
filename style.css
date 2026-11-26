@@ -2970,3 +2970,86 @@ background-image: none !important;
 .fil-leaf-3 { fill: #556729; }
 .fil-leaf-4 { fill: #3C4819; }
 .fil-leaf-5 { fill: #3C4819; }
+/* =================================
+   FULL WIDTH PRODUCT SECTION
+================================= */
+
+.full-width-products {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.full-width-products .table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.full-width-products .product-table {
+    width: 100%;
+    min-width: 750px;
+}
+
+/* MOBILE PRODUCT SECTION */
+
+@media (max-width: 600px) {
+
+    .full-width-products {
+        width: 100%;
+        padding: 18px 15px;
+        margin: 0;
+    }
+
+    .full-width-products .section-heading {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+/* FIX SIDEBAR BRAND NAME ON MOBILE */
+
+@media (max-width: 600px) {
+
+    .sidebar-brand {
+        padding: 5px 2px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .sidebar-brand h2 {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    .sidebar-brand p {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+        line-height: 1.5;
+    }
+}
+/* SMOOTH SIDEBAR COLLAPSE */
+
+.dashboard-layout .sidebar {
+    transition: width 0.5s ease,
+                min-width 0.5s ease,
+                padding 0.5s ease,
+                opacity 0.4s ease;
+}
+
+.dashboard-layout.sidebar-hidden .sidebar {
+    width: 0;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.dashboard-layout .dashboard-main {
+    transition: padding 0.5s ease;
+}
