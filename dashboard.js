@@ -154,9 +154,14 @@ deleteButton.addEventListener("click", function() {
     deleteProduct(product);
 });
 
+// Add Delete button to Actions cell
+actionCell.appendChild(deleteButton);
 
-        tableBody.appendChild(row);
+// Add Actions cell to product row
+row.appendChild(actionCell);
 
+// Add completed row to table
+tableBody.appendChild(row);
     });
 
 }
